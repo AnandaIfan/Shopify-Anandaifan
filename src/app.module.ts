@@ -14,9 +14,9 @@ import { CollectModule } from './collect/collect.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://shopify:secret@mongodb:5536/admin'),
-    // MongooseModule.forRoot('mongodb://shopify:secret@mongodb:5536/shopify-db'),
-    // MongooseModule.forRoot('mongodb://localhost:5536/shopify-rest-api'),
+    MongooseModule.forRoot('mongodb://shopify:secret@mongodb:27017/admin'),
+    // MongooseModule.forRoot('mongodb://shopify:secret@mongodb:27017/shopify-db'),
+    // MongooseModule.forRoot('mongodb://localhost:27017/shopify-rest-api'),
     MulterModule.register({
       storage: diskStorage({
         destination: 'uploads/files',
